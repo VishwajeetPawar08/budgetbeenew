@@ -27,6 +27,8 @@ function Navbar() {
         </a>
       </div>
       <div className="navbar-right">
+        <button className="navbar-button">Add Income</button>
+        <button className="navbar-button">Add Expense</button>
         <FaMoon className="navbar-icon" title="Night Mode" />
         <FaBell className="navbar-icon" title="Notifications" />
         <FaCog className="navbar-icon" title="Settings" />
