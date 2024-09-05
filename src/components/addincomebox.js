@@ -1,6 +1,6 @@
 // import React, { useState } from 'react';
 import React from 'react'
-import './addexpensebox.css';
+import './addincomeexpensebox.css';
 
 function AddIncomeBox({ onClose }) {
 //   const [category, setCategory] = useState('');

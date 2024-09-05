@@ -1,0 +1,117 @@
+.dashboard {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 30% 70%; /* Set the first row to 30% and second row to 70% */
+    gap: 20px;
+    height: 100vh; /* Utilize full viewport height */
+    padding: 20px;
+  }
+  
+  .component {
+    border: 1px solid black;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Component 1 - DateRangePicker */
+  .component-1 {
+    grid-row: 1; /* First row */
+    height: 100%;
+  }
+  .date-range-picker {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .calendar-icon {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  /* Component 2 - Summary */
+  .component-2 {
+    grid-row: 1; /* First row */
+    height: 100%;
+  }
+  .summary-container {
+    display: flex;
+    justify-content: space-between;
+    height: 100%;
+  }
+  .summary-box {
+    padding: 20px;
+    border-radius: 10px;
+    border: 1px solid black;
+    flex: 1;
+    margin: 5px;
+    text-align: center;
+  }
+  
+  /* Component 3 - Income Details */
+  .component-3 {
+    grid-row: 2; /* Second row */
+    height: 100%;
+  }
+  .income-details {
+    height: 100%;
+    overflow-y: auto;
+  }
+  .card {
+    padding: 20px;
+    border-radius: 10px;
+    border: 1px solid grey;
+    margin: 10px;
+  }
+  .income-cards {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .income-cards .card {
+    flex: 0 0 calc(50% - 20px);
+    margin: 10px;
+  }
+  
+  /* Component 4 - Expenses Details */
+  .component-4 {
+    grid-row: 2; /* Second row */
+    height: 100%;
+  }
+  .expenses-details {
+    height: 100%;
+    overflow-y: auto;
+  }
+  .expense-cards {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .expense-cards .card {
+    flex: 0 0 calc(33% - 20px);
+    margin: 10px;
+  }
+
+  /* Component 2 - Summary */
+.component-2 {
+    grid-row: 1; /* First row */
+    height: 100%;
+  }
+  
+  .summary-container {
+    display: flex;
+    flex-direction: column; /* Stack items vertically */
+    justify-content: space-between; /* Evenly distribute the rows */
+    height: 100%;
+  }
+  
+  .summary-box {
+    flex: 1; /* Equal height for each row */
+    padding: 5px;
+    border-radius: 10px;
+    border: 1px solid black;
+    /* margin: 5px; */
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center; /* Center the text inside each box */
+  }
+  

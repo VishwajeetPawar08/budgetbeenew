@@ -21,6 +21,11 @@ function Navbar() {
     setIncomeBoxVisible(!incomeBoxVisible);
   };
 
+
+  const btnStyle = {
+    width: "10%"
+  };
+
   return (
     <nav className="navbar">
       <div className="navbar-left">
