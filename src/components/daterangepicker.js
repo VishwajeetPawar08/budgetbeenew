@@ -6,6 +6,11 @@ const DateRangePicker = () => {
 
   return (
     <div className="date-range-picker">
+      <div className="heading">
+        <h4>
+          Select date to view Income & Expenses
+        </h4>
+      </div>
       <i className="calendar-icon">📅</i>
       <label>
         From:

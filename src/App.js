@@ -7,6 +7,8 @@ import Dashboard from './components/dashboard';
 import ForgotPassword from './components/forgotpassword';
 import VerifyOtp from './components/verifyotp';
 import ResetPassword from './components/resetpassword';
+import MyProfile from './components/myprofile';
+import ChangePassword from './components/changepassword';
 
 function App() {
   return (
@@ -19,6 +21,8 @@ function App() {
         <Route path="/forgot-password" element={<ForgotPassword />} />
         <Route path="/verify-otp" element={<VerifyOtp />} />
         <Route path="/reset-password" element={<ResetPassword />} />
+        <Route path="/profile" element={<MyProfile />} />
+        <Route path="/changepassword" element={<ChangePassword />} />
       </Routes>
     </Router>
   );

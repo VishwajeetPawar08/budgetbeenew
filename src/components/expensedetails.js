@@ -20,6 +20,21 @@ const ExpensesDetails = () => {
             <p>Description: {"expense.description"}</p>
             <p>Spent Amount: {"expense.amount"}</p>
           </div>
+          <div className="card" key={"index"}>
+            <p>Category: {"expense.category"}</p>
+            <p>Description: {"expense.description"}</p>
+            <p>Spent Amount: {"expense.amount"}</p>
+          </div>
+          <div className="card" key={"index"}>
+            <p>Category: {"expense.category"}</p>
+            <p>Description: {"expense.description"}</p>
+            <p>Spent Amount: {"expense.amount"}</p>
+          </div>
+          <div className="card" key={"index"}>
+            <p>Category: {"expense.category"}</p>
+            <p>Description: {"expense.description"}</p>
+            <p>Spent Amount: {"expense.amount"}</p>
+          </div>
         {/* ))} */}
       </div>
     </div>

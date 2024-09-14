@@ -19,7 +19,13 @@ const IncomeDetails = () => {
             <p>Category: {"income.category"}</p>
             <p>Description: {"income.description"}</p>
             <p>Amount: {"income.amount"}</p>
-            <button>Show Details</button>
+            <button>View Details</button>
+          </div>
+          <div className="card" key={"index"}>
+            <p>Category: {"income.category"}</p>
+            <p>Description: {"income.description"}</p>
+            <p>Amount: {"income.amount"}</p>
+            <button>View Details</button>
           </div>
         {/* ))} */}
       </div>
