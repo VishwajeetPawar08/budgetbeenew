@@ -31,13 +31,19 @@ function AddIncomeBox({ onClose }) {
 //       alert('Please fill in all fields.');
 //     }
 //   };
-const fontt = {
-    color: "black"
-  };
+const heading = {
+  // color: "black",
+  textAlign: "center",
+  paddingBottom: "20px"
+};
+
+const fontt={
+  color: "white"
+}
 return (
     <div className="overlay">
-      <div className="add-expense-box">
-        <h3 style={fontt}>Add Expense</h3>
+      <div className="add-box">
+        <h3 style={heading}>Add Income</h3>
         <div className="form-group">
           <label style={fontt}>Category:</label>
           <input 
@@ -69,8 +75,8 @@ return (
           />
         </div>
         {/* onClick={handleSubmit} */}
-        <button>Submit</button>
-        <button onClick={onClose} className="close-button">Close</button>
+        <button className='income-expense-button'>Submit</button>
+        <button onClick={onClose} className="close-button income-expense-button">Close</button>
       </div>
     </div>
   );

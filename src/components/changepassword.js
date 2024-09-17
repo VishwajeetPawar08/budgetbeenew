@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import axios from 'axios';
-import './profile.css';
+// import './profile.css';
+import { Link } from "react-router-dom";
 
 const ChangePassword = () => {
   const [passwords, setPasswords] = useState({
@@ -35,31 +36,34 @@ const ChangePassword = () => {
   };
 
   return (
-    <div className="change-password-page">
-      <h2>Change Password</h2>
-      <input
-        type="password"
-        name="oldPassword"
-        placeholder="Old Password"
-        value={passwords.oldPassword}
-        onChange={handleChange}
-      />
-      <input
-        type="password"
-        name="newPassword"
-        placeholder="New Password"
-        value={passwords.newPassword}
-        onChange={handleChange}
-      />
-      <input
-        type="password"
-        name="confirmPassword"
-        placeholder="Confirm Password"
-        value={passwords.confirmPassword}
-        onChange={handleChange}
-      />
-      <button onClick={handleSubmit}>Change Password</button>
-      {error && <p style={{ color: 'red' }}>{error}</p>}
+    <div className='container'>
+      <div className="change-password-card">
+        <h2>Change Password</h2>
+        <input
+          type="password"
+          name="oldPassword"
+          placeholder="Old Password"
+          value={passwords.oldPassword}
+          onChange={handleChange}
+        />
+        <input
+          type="password"
+          name="newPassword"
+          placeholder="New Password"
+          value={passwords.newPassword}
+          onChange={handleChange}
+        />
+        <input
+          type="password"
+          name="confirmPassword"
+          placeholder="Confirm Password"
+          value={passwords.confirmPassword}
+          onChange={handleChange}
+        />
+        <button onClick={handleSubmit}>Change Password</button>
+        <Link to="/signin">Next2</Link>
+        {error && <p style={{ color: 'red' }}>{error}</p>}
+      </div>
     </div>
   );
 };

@@ -1,6 +1,7 @@
 // import React, { useState } from 'react';
 import React from 'react'
-import './addincomeexpensebox.css';
+// import './addincomeexpensebox.css';
+import "./dashboard.css"
 
 function AddExpenseBox({ onClose }) {
 //   const [category, setCategory] = useState('');
@@ -32,16 +33,23 @@ function AddExpenseBox({ onClose }) {
 //     }
 //   };
 
-const fontt = {
-    color: "black"
-  };
+const heading = {
+  // color: "black",
+  textAlign: "center",
+  paddingBottom: "20px"
+};
+
+const fontt={
+  color: "white"
+}
+
 
   return (
     <div className="overlay">
-      <div className="add-expense-box">
-        <h3 style={fontt}>Add Expense</h3>
+      <div className="add-box">
+        <h3 style={heading}>Add Expense</h3>
         <div className="form-group">
-          <label style={fontt}>Category:</label>
+          <label >Category:</label>
           <input 
             type="text" 
             // value={category} 
@@ -71,8 +79,8 @@ const fontt = {
           />
         </div>
         {/* onClick={handleSubmit} */}
-        <button>Submit</button>
-        <button onClick={onClose} className="close-button">Close</button>
+        <button className='submit-button income-expense-button'>Submit</button>
+        <button onClick={onClose} className="close-button income-expense-button">Close</button>
       </div>
     </div>
   );

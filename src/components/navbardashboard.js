@@ -34,7 +34,8 @@ function Navbar() {
     <div className="div-navbar">
       <nav className="navbar">
         <div className="navbar-left">
-          <img src={`${process.env.PUBLIC_URL}/logo.png`} alt="Logo" className="navbar-logo" />
+          <img src="/logo.png" alt="Logo" className="navbar-logo" />
+          <h2 className='navbar-project-name'><span className='npn-B'>B</span>udget<span className='npn-B'>B</span>ee</h2>
         </div>
         <div className="navbar-center">
           <a href="/about-us" className="navbar-link">About Us</a>
