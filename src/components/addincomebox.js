@@ -75,7 +75,7 @@ return (
           />
         </div>
         {/* onClick={handleSubmit} */}
-        <button className='income-expense-button'>Submit</button>
+        <button className='income-expense-button submit-button'>Submit</button>
         <button onClick={onClose} className="close-button income-expense-button">Close</button>
       </div>
     </div>

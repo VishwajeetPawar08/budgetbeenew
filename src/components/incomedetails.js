@@ -36,7 +36,7 @@ const IncomeDetails = ({ incomeData }) => {
                   }
                 </p>
                 <p>Amount: ${income.amount}</p>
-                <button onClick={() => openModal(income)}>View Details</button>
+                <button onClick={() => openModal(income)} className='submit-button'>View Details</button>
               </div>
             ))}
           </div>
@@ -45,31 +45,31 @@ const IncomeDetails = ({ incomeData }) => {
             <p>Category: {income.category}</p>
             <p>Description: {income.description}</p>
             <p>Amount: {income.amount}</p>
-            <button onClick={() => openModal(4000)}>View Details</button>
+            <button className='submit-button' onClick={() => openModal(4000)}>View Details</button>
           </div>
           <div className="card" key={"index"}>
             <p>Category: {"income.category"}</p>
             <p>Description: {"income.description"}</p>
             <p>Amount: {"income.amount"}</p>
-            <button>View Details</button>
+            <button className='submit-button'>View Details</button>
           </div>
           <div className="card" key={"index"}>
             <p>Category: {"income.category"}</p>
             <p>Description: {"income.description"}</p>
             <p>Amount: {"income.amount"}</p>
-            <button>View Details</button>
+            <button className='submit-button'>View Details</button>
           </div>
           <div className="card" key={"index"}>
             <p>Category: {"income.category"}</p>
             <p>Description: {"income.description"}</p>
             <p>Amount: {"income.amount"}</p>
-            <button>View Details</button>
+            <button className='submit-button'>View Details</button>
           </div>
           <div className="card" key={"index"}>
             <p>Category: {"income.category"}</p>
             <p>Description: {"income.description"}</p>
             <p>Amount: {"income.amount"}</p>
-            <button>View Details</button>
+            <button className='submit-button'>View Details</button>
           </div>
           
         </div>
