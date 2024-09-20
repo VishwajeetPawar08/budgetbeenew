@@ -2,7 +2,7 @@
 // import { useLocation, useNavigate } from 'react-router-dom';
 // import './ResetPassword.css';
 // import sqlite3 from 'sqlite3'; // You may need to install this package
-import Navbar from './navbarsigninup';
+// import Navbar from './navbarsigninup';
 
 function ResetPassword() {
 //   const [newPassword, setNewPassword] = useState('');
@@ -32,7 +32,7 @@ function ResetPassword() {
 
   return (
     <div className="reset-password-container">
-        <Navbar />
+        {/* <Navbar /> */}
       <h2>Reset Password</h2>
       <div className="form-group">
         <label>Email:</label>

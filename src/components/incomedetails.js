@@ -15,6 +15,12 @@ const IncomeDetails = ({ incomeData }) => {
     setSelectedIncome(null);
   };
 
+  const income = {
+    category: "car",
+    description:"hello this is the description manually entered",
+    amount: 5000
+  };
+
   return (
     <div className="component-3 income-details">
       <h2>Income Details</h2>
@@ -36,10 +42,10 @@ const IncomeDetails = ({ incomeData }) => {
           </div>
 
           <div className="card" key={"index"}>
-            <p>Category: {"income.category"}</p>
-            <p>Description: {"income.description"}</p>
-            <p>Amount: {"income.amount"}</p>
-            <button>View Details</button>
+            <p>Category: {income.category}</p>
+            <p>Description: {income.description}</p>
+            <p>Amount: {income.amount}</p>
+            <button onClick={() => openModal(4000)}>View Details</button>
           </div>
           <div className="card" key={"index"}>
             <p>Category: {"income.category"}</p>
@@ -70,17 +76,21 @@ const IncomeDetails = ({ incomeData }) => {
 
       {/* Modal for viewing full details */}
       {isModalOpen && (
-        <div className="modal-overlay">
-          <div className="modal-container">
-            <button className="close-modal" onClick={closeModal}>X</button>
-            <h2>Income Details</h2>
+        <div className="overlay">
+          <div className="item-box">
+            
+            <h2 className='income-data-h2'>Income Details</h2>
             {selectedIncome && (
               <div>
-                <p><strong>Category:</strong> {selectedIncome.category}</p>
+                <p className='income-data-p'><strong>Category:</strong> {income.category}</p>
+                <p className='income-data-p'><strong>Description:</strong> {income.description}</p>
+                <p className='income-data-p'><strong>Amount:</strong> ${income.amount}</p>
+                {/* <p><strong>Category:</strong> {selectedIncome.category}</p>
                 <p><strong>Description:</strong> {selectedIncome.description}</p>
-                <p><strong>Amount:</strong> ${selectedIncome.amount}</p>
+                <p><strong>Amount:</strong> ${selectedIncome.amount}</p> */}
               </div>
             )}
+            <button className="yes-button" onClick={closeModal}>Close</button>
           </div>
         </div>
       )}

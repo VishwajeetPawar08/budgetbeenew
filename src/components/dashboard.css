@@ -274,7 +274,7 @@
   z-index: 1000;
 }
 
-.add-box {
+.add-box , .delete-box, .item-box{
   background-color: #000000;
   color: white;
   padding: 30px;
@@ -322,18 +322,22 @@ button {
   margin-top: 10px;
 }
 
-.submit-button{
+.submit-button, .no-button{
   background-color: #007bff;
 }
 
-.submit-button:hover {
+.submit-button:hover, .no-button:hover {
   background-color: #0056b3;
 }
 
-.close-button {
+.close-button, .yes-button {
   background-color: #dc3545;
 }
 
-.close-button:hover {
+.close-button:hover, .yes-button:hover {
   background-color: #c82333;
+}
+
+.income-data-p, .income-data-h2{
+  color: white;
 }
