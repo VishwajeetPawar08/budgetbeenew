@@ -338,6 +338,6 @@ button {
   background-color: #c82333;
 }
 
-.income-data-p, .income-data-h2{
+.income-data-p, .income-data-h2, .expense-data-p, .expense-data-h2{
   color: white;
 }
